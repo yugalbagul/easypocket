@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/*Layout Elements*/
+// root element of the app
+.site-container{
+  display: flex;
+  flex-direction: column;
+  .main-header, .main-content {
+    flex: 1 100%;
+    flex-direction: row;
+  }
+}
+
+.main-header{
+  display: flex;
+  height: 54px;
+  box-shadow: 0px 1px 1px;
+  align-items: center;
+}
+
+.logo-container{
+  min-width: 160px;
+  margin-left: 30px;
+  font-size: 20px;
+}
+
+
+/* Global / Utility classess */
+
+.flx {
+  display: flex;
+}
+
+.flx-dir-col{
+  flex-direction: column;
+}
+
+.flx-jst-space-between{
+  justify-content: space-between;
+}
+
+.flx-jst-center{
+  justify-content: center;
+}
+
+.flx-self-center{
+  align-self: center;
+}
