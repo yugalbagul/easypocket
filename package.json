@@ -5,8 +5,11 @@
   "dependencies": {
     "axios": "^0.16.2",
     "immutable": "^3.8.2",
+    "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-overlays": "^0.8.3",
+    "react-popover": "^0.5.4",
     "react-redux": "^5.0.6",
     "react-router": "^3.2.0",
     "redux": "^3.7.2",
@@ -99,12 +102,15 @@
   },
   "eslintConfig": {
     "extends": "airbnb",
+    "parser": "babel-eslint",
     "plugins": [
       "jsx-a11y"
     ],
     "rules": {
       "jsx-a11y/href-no-hash": 2,
-      "react/jsx-filename-extension": 0
+      "react/jsx-filename-extension": 0,
+      "react/forbid-prop-types": 0,
+      "react/require-default-props": 0
     }
   }
 }
